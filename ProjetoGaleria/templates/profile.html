@@ -1,0 +1,14 @@
+{% extends "home.html" %}
+
+{% block titulo %}
+Pinterest: {{usuario}}
+{% endblock %}
+
+{%block body%}
+<body>
+    <h1> Perfil: {{usuario}} </h1>
+    
+    <button><a href="{{ url_for('home') }}">Sair</a></button>
+
+</body>
+{%endblock%}
